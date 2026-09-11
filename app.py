@@ -17,12 +17,12 @@ import plotly.graph_objects as go
 import streamlit as st
 from dotenv import load_dotenv
 
-from dost_utils import calculations as calc
-from dost_utils.narrative import NarrativeContext, generate_monitoring_narrative
+import calculations as calc
+from narrative import NarrativeContext, generate_monitoring_narrative
 
 load_dotenv()
 
-DATA_DIR = Path(__file__).parent / "data"
+DATA_DIR = Path(__file__).parent
 
 # ---------------------------------------------------------------------------
 # Palette (Section 21 — professional government style: navy/white, status
